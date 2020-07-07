@@ -1,9 +1,11 @@
 ---
 layout: layouts/base.html
+mainHeading: "Welcome to the homepage"
 ---
-<h1>Hello World, this is my first Eleventy project</h1>
-
+<h1>{{ mainHeading }}
 <!-- this is a for loop getting all pages' content -->        
+<ul>
 {% for page in collections.pages %}
-            {{ page.data.title }}
-        {% endfor %} <!-- end of for loop -->
+        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+{% endfor %} <!-- end of for loop -->
+</ul>
