@@ -1,10 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title> | UVA FM Apprenticeship Program</title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
 
 <body>
+    <!-- this is base.html layout-->
     <header>
-
+        <div class="wrap-brand-bar">
+    <div class="brand-bar">
+        <a href="https://www.virginia.edu"><img src="" alt=""></a>
+    </div>
+</div>
     </header>
+    <div class="wrap-nav">
+    <nav role="navigation">
+        <div>
+            <button type="button" class="mobile-nav-toggle"></button>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="curriculum.html">Curriculum</a>
+                </li>
+                <li>
+                    <a href="application.html">Application Process</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+                <li>
+                    <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a href="council.html">Apprenticeship Council</a>
+                </li>
+                <li>
+                    <a href="meettheteam.html">Meet the Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- <nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href=""></li>
+    </ul>
+</nav> -->
+    
     <main>
-        <h1>Welcome to the homepage
+        <h1>Welcome to the homepage</h1>
 <!-- this is a for loop getting all pages' content -->        
 <ul>
 
@@ -15,7 +71,53 @@
         
     </main>
     <footer>
+    <div>
+        <a href="https://www.virginia.edu" class="logo-footer" title="University of Virginia Home"></a>
+    </div>
+    <div>
+        <p>
+            <a href="https://www.fm.virginia.edu">Facilities Management</a>
+        </p>
+        <p>1450 Leake Dr, P.O. Box 400726</p>
+        <p>Charlottesville, VA 22904-4726</p>
+    </div>
+    <div>
+        <p><span>PHONE</span> 434-243-3414</p>
+        <p><span>EMAIL</span> <a href="mailto:fm-apprenticeship@virginia.edu">fm-apprenticeship@virginia.edu</a></p>
+        <p>Maintained by <a href="mailto:fmwebmaster@virginia.edu">webmaster</a></p>
+    </div>
+    <div>
+        <ul>
+            <li>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/UVAApprentice/" class="social-link">Facebook</a>
+            </li>
+            <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/UVAApprentice" class="social-link">@UVAApprentice</a>
+            </li>
+            <li>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <a href="https://www.instagram.com/uvaapprentice/" class="social-link">Instagram</a>
+            </li>
+            <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/UVAFM" class="social-link">@UVAFM</a>
+            </li>
+            <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/BernietheBee" class="social-link">@BernietheBee</a>
+            </li>
+        </ul>
+    </div>
+    <p>&copy; <span id="currentYear"></span></p>
+</footer>
 
-    </footer>
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = year;
+    </script>
 </body>
+
+
 </html>

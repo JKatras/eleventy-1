@@ -1,16 +1,23 @@
-{% include "_head.html" %}
-<body>
-    {% include "_nav.html" %}
-    <header>
+{% include _head.html %}
 
+<body>
+    <!-- this is base.html layout-->
+    <header>
+        {% include _brand-bar.html %}
     </header>
+    {% include _nav.html %}
+    
     <main>
         {{ content }}
 
         
     </main>
-    <footer>
-
-    </footer>
+    {% include _footer.html %}
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = year;
+    </script>
 </body>
+
+
 </html>
