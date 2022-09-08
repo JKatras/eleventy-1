@@ -1,0 +1,43 @@
+{% include _head.html %}
+<body 
+{% if bodyClass %}
+class="{{ bodyClass }}"
+{% endif %}>
+<a id="skipToMain" href="#main">Skip to main content</a>
+    <!-- this is base.html layout-->
+    {% include _brand-bar.html %}
+    {% include _nav.html %}
+    <main id="main">
+        <h1>
+            <span class="cond demi uppercase">Facilities Management</span> 
+            <span class="skew-bg">
+                <span class="medium spaced">Apprenticeship Program</span>
+            </span>    
+        </h1>
+        <div class="banner">
+            <div class="homefeature">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212.jpg" media="(min-width: 1200px)">
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212_994.jpg" media="(min-width: 770px)">
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212_769.jpg" media="(max-width: 769px)">
+                        <img src="assets/images/banners/apprentice-job-fair-ad_20200212.jpg" alt="Composite of facilities employees of varying trades" class="feature">
+                    </picture>
+                    <div class="bg-white box box-caption-bottom-right">
+                        <h2><a href="application.html"  class="copy-blue" rel="noopener" target="_blank">2020 hiring updates &raquo;</a></h2>
+                    </div>
+            </div>
+        </div>
+        {{ content }}        
+    </main>
+    {% include _footer.html %}
+    
+    <script>
+        var year = new Date().getFullYear();
+        document.getElementById('currentYear').innerHTML = year;
+    </script>
+    {% for link in customJS.links %}
+        <script src="/assets/js/{{ link }}"></script>
+    {% endfor %}
+</body>
+</html>

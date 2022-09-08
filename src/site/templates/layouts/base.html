@@ -1,23 +1,23 @@
 {% include _head.html %}
-
-<body>
-    <!-- this is base.html layout-->
-    <header>
-        {% include _brand-bar.html %}
-    </header>
+<body 
+{% if bodyClass %}
+class="{{ bodyClass }}"
+{% endif %}>
+    <a id="skipToMain" href="#main">Skip to main content</a>
+    {% include _brand-bar.html %}
     {% include _nav.html %}
-    
-    <main>
-        {{ content }}
 
-        
+    <main id="main">
+        {{ content }}        
     </main>
     {% include _footer.html %}
+    
     <script>
         var year = new Date().getFullYear();
         document.getElementById('currentYear').innerHTML = year;
     </script>
+    {% for link in customJS.links %}
+        <script src="/assets/js/{{ link }}"></script>
+    {% endfor %}
 </body>
-
-
 </html>

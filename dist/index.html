@@ -4,75 +4,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<title> | UVA FM Apprenticeship Program</title>
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<title>Home | UVA FM Apprenticeship Program</title>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="/assets/images/favicons/favicon.ico" type="image/x-icon">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <![endif]-->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <!-- 
+    <link rel="stylesheet" href="/assets/css/{"links":["home.css"]}">
+     -->
+    <!-- test to see if multiple custom css files can be added -->
+    
+    <link rel="stylesheet" href="/assets/css/home.css">
+    
+    <script src="//use.typekit.net/tgy5tlj.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 </head>
+<body 
 
-<body>
+class="home"
+>
+<a id="skipToMain" href="#main">Skip to main content</a>
     <!-- this is base.html layout-->
     <header>
-        <div class="wrap-brand-bar">
-    <div class="brand-bar">
-        <a href="https://www.virginia.edu"><img src="" alt=""></a>
+    <div class="wrap-brand-bar">
+        <div class="brand-bar">
+            <a href="https://www.virginia.edu"><img src="/assets/images/logos/UVA-logo-horizontal-retina.svg" alt="University of Virginia"></a>
+        </div>
     </div>
-</div>
-    </header>
+</header>
     <div class="wrap-nav">
-    <nav role="navigation">
+    <nav>
         <div>
             <button type="button" class="mobile-nav-toggle"></button>
             <ul class="nav-list">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index">Home</a>
                 </li>
                 <li>
-                    <a href="curriculum.html">Curriculum</a>
+                    <a href="curriculum">Curriculum</a>
                 </li>
                 <li>
-                    <a href="application.html">Application Process</a>
+                    <a href="application">Application Process</a>
                 </li>
                 <li>
-                    <a href="faqs.html">FAQs</a>
+                    <a href="faqs/">FAQs</a>
                 </li>
                 <li>
-                    <a href="news.html">News</a>
+                    <a href="news">News</a>
                 </li>
                 <li>
-                    <a href="council.html">Apprenticeship Council</a>
+                    <a href="council">Apprenticeship Council</a>
                 </li>
                 <li>
-                    <a href="meettheteam.html">Meet the Team</a>
+                    <a href="meettheteam">Meet the Team</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
+    <main id="main">
+        <h1>
+            <span class="cond demi uppercase">Facilities Management</span> 
+            <span class="skew-bg">
+                <span class="medium spaced">Apprenticeship Program</span>
+            </span>    
+        </h1>
+        <div class="banner">
+            <div class="homefeature">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212.jpg" media="(min-width: 1200px)">
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212_994.jpg" media="(min-width: 770px)">
+                        <source srcset="assets/images/banners/apprentice-job-fair-ad_20200212_769.jpg" media="(max-width: 769px)">
+                        <img src="assets/images/banners/apprentice-job-fair-ad_20200212.jpg" alt="Composite of facilities employees of varying trades" class="feature">
+                    </picture>
+                    <div class="bg-white box box-caption-bottom-right">
+                        <h2><a href="application.html"  class="copy-blue" rel="noopener" target="_blank">2020 hiring updates &raquo;</a></h2>
+                    </div>
+            </div>
+        </div>
+        <h1></h1>
+<!-- this is a for loop getting all pages' content -->
+<!-- 
+- [Apprenticeship Curriculum](/curriculum.html)
 
-<!-- <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href=""></li>
-    </ul>
-</nav> -->
-    
-    <main>
-        <h1>Welcome to the homepage</h1>
-<!-- this is a for loop getting all pages' content -->        
-<ul>
-
-        <li><a href="/pages/home/">Welcome to the homepage</a></li>
- <!-- end of for loop -->
-</ul>
-
+- [Home](/)
+  -->
+<!-- end of for loop -->
         
     </main>
     <footer>
     <div>
-        <a href="https://www.virginia.edu" class="logo-footer" title="University of Virginia Home"></a>
+        <a href="https://www.virginia.edu" class="logo-footer" title="University of Virginia Home">
+            <img src="/assets/images/logos/UVA-logo-footer.svg" alt="University of Virginia">
+        </a>
     </div>
     <div>
         <p>
@@ -113,11 +143,11 @@
     <p>&copy; <span id="currentYear"></span></p>
 </footer>
 
+    
     <script>
         var year = new Date().getFullYear();
         document.getElementById('currentYear').innerHTML = year;
     </script>
+    
 </body>
-
-
 </html>

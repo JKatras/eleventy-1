@@ -1,0 +1,307 @@
+h1{color:#eb5f0c;font-size:2.25rem;font-weight:700;padding:1.777777rem 0;}
+.home h1{color:#232d4b;line-height:1.555555rem;margin:.75rem auto 2rem auto;padding:0;text-align:center;vertical-align:middle;}
+.home h1 > span:first-child{padding-right:2rem;}
+
+.medium{font-weight:500;}
+.cond{font-family:'franklin-gothic-urw-cond', 'arial narrow', Helvetica, sans-serif;}
+.demi{font-weight:700;}
+.uppercase{text-transform:uppercase;}
+
+.skew-bg{background-color:#232d4b;display:inline-block;padding:.666666rem 1.333333rem;transform:skew(-30deg);-webkit-transform:skew(-30deg);-moz-transform:skew(-30deg);}
+.skew-bg > span{color:#ffffff;display:inline-block;font-size:.8em;padding:0;transform:skew(30deg);-webkit-transform:skew(30deg);-moz-transform:skew(30deg);}
+.spaced{letter-spacing:.2rem;}
+
+.homefeature .box {
+			text-align: left;
+            /* padding: 0 2.5rem 0 0; */
+            max-width: none;
+            /* width: 55%; */
+		}
+        .homefeature .box h2 {
+            line-height: 1.2;
+            /* letter-spacing: .075rem; */
+            /* font-size: 2.375rem; */
+            margin-bottom: 0;
+            /* font-size: 5vw;*/
+            font-weight: 600;
+        }
+        .homefeature .box h2 a:hover {
+            color: #25cad3;
+        }
+        .homefeature .box h2 .spaced {
+            font-family: 'franklin-gothic-urw', arial, sans-serif;
+            font-size: 1.7rem;
+            letter-spacing: .5rem;
+        }
+        .homefeature .box h2 .compressed.demi {
+            font-size: 3.5rem;
+        }
+        .homefeature .box h2 .italic {
+            font-size: 2rem;
+        }
+        .homefeature .box p {
+			font-family: 'franklin-gothic-urw', arial, sans-serif;
+			font-weight: 500;
+            line-height: 1.0;
+			margin-bottom: 1rem;
+		}
+        .homefeature .box p:first-of-type {
+            /*font-size: 2rem;*/
+            font-weight: 400;
+        }
+        .homefeature .box p:last-child {
+			margin-bottom: 0;
+			/*text-align: right;*/
+        }
+        .temp-feature .box {
+            margin: 0 auto;
+            max-width: 520px;
+            text-align: center;
+        }
+        .homefeature .box .skew-button {
+            background-color: #e57200;
+            display: inline-block;
+            font-size: 2.25rem;
+            margin-top: 1.75rem;
+            transform: skew(-20deg);
+            -webkit-transform: skew(-20deg);
+            -moz-transform: skew(-20deg);
+        }
+        .box .skew-button:first-of-type {
+            margin-right: 1rem;
+        }
+        .box .skew-button:last-of-type {
+            margin-left: 1rem;
+        }
+        .box .skew-button:hover  {
+            /* color: #232d4b; */
+            background-color: #25cad3;
+        }
+        .box .skew-button a,
+        .box .skew-button a:hover {
+            background: none;
+        }
+        .box .skew-button:hover a {
+            color: #232d4b;
+        }
+        .box .skew-button.bg-orange2nd:hover {
+            background-color: #ffffff;
+        }
+        .box .skew-button.bg-orange2nd:hover a,
+        .box .skew-button.bg-orange2nd a:hover {
+            border:none;
+        }
+        .box .skew-button a {
+            border: none;
+            display: block;
+            padding: .4rem 1rem;
+            transform: skew(20deg);
+            -webkit-transform: skew(20deg);
+            -moz-transform: skew(20deg);
+        }
+		.homefeature .box a {
+			font-weight: 600;
+			margin: 0;
+		}
+
+        .overlay-lt {
+            height: auto;
+            width: 38%;
+            left: 9%;
+            top: 26%;
+        }
+		.temp-feature {
+            height: 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+			color: #ffffff;
+			padding: 24px;
+            position: relative;
+		}
+        .temp-feature .box-container {
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+            max-width: 1400px;
+            position: relative;
+        }
+        .temp-feature .box {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+        }
+        .temp-feature .box img {
+            max-width: 100%;
+        }
+		.temp-feature h2 {
+			margin: 0;
+			padding: 10px 10px 0 10px;
+		}
+        .temp-feature .skew-button {
+            display: inline-block;
+        }
+		.temp-feature p {
+			font-size: 20px;
+			padding: 10px;
+		}
+		.temp-feature a {
+			border-bottom: 2px solid #ffffff;
+			font-weight: 600;
+			text-decoration: none;
+			color: #ffffff;
+		}
+        @media (max-width: 499px){
+            .home h1{font-size:1.3rem;}
+            .home h1 span.medium{font-size:.8rem;}
+        }
+        @media all and (max-width: 500px){
+            .temp-feature .box .skew-button {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        
+        @media all and (max-width: 560px){
+            .temp-feature .box {
+                padding: 0;
+                max-width: none;
+            }
+            .homefeature .box h2 {
+                /* font-size: 1.25rem; */
+            }
+        }
+        @media (max-width: 599px){
+            .home h1 > span:first-child{padding:0;}
+        }
+        @media all and (max-width: 629px) {
+            .homefeature .box-caption-bottom-left {
+                display: block;
+                margin-bottom: 1rem;
+                padding: 0;
+                width: auto;
+            }
+        }
+        @media all and (max-width:767px){
+            .temp-feature {
+                background-image: url('images/graphics/2019/annual-report/AR-temp-banner-bg_767.png')
+            }
+        }
+        @media all and (max-width: 921px){
+            .home h1{font-size:1.3rem;}
+            .home h1 .skew-bg{padding:.333333rem 1rem;}
+            }
+        @media all and (max-width: 992px) {
+            .homefeature .box,
+            .box-caption-middle-left {
+                /* bottom: 4%;
+                left: 4%; */
+            }
+            .homefeature .box .skew-button a {
+                padding: .25rem .5rem;
+            }
+        }
+        
+        @media all and (min-width: 561px) and (max-width: 992px){
+            
+            .homefeature .box h2 {
+                font-size: 2rem;
+            }
+            
+        }
+        @media all and (min-width:630px) and (max-width: 992px){
+            .box-caption-bottom-left {
+                position: absolute;
+            }
+        }
+		@media all and (min-width: 801px) and (max-width:992px) {
+			.homefeature .overlay-lt {
+                display: inline-block;
+                left: 9%;
+                position: absolute;
+            }
+            .temp-feature {
+				padding: 15px;
+			}
+            .bg-none {
+                background: transparent;
+            }
+			.box p,
+            .homefeature .box p {
+				/* margin: .25rem auto 1rem;
+				text-align: center;
+				width: 60%; */
+            }
+			.homefeature .box h2 {
+				/* max-width: none; */
+				/* font-size: 1.25rem;*/
+			}
+
+			.homefeature .box p:last-child {
+				text-align: center;
+			}
+
+			.temp-feature h2,
+			.temp-feature p,
+			.temp-feature a {
+				font-size: 1rem;
+            }
+		}
+        @media screen and (min-width:993px) {
+                .homefeature .box h2 {
+                    font-size: 3rem;    
+                }
+                .homefeature .box p:first-of-type {
+                    font-size: 1.625rem;
+                }
+            }
+        @media all and (min-width:767px) and (max-width:1399px){
+            .temp-feature {
+                background-image: url('images/graphics/2019/annual-report/AR-temp-banner-bg_1400.png');
+            }
+        }
+        @media screen and (max-width:800px){
+            .homefeature .box {
+                display: block;
+                /* padding: 1rem; */
+                position: relative;
+                /* background-color: #232d4b; */
+                text-align: center;
+                /* width: 100%; */
+                left: 0;
+                bottom: 0;
+            }
+        }
+        @media screen and (min-width:801px) and (max-width:1199px) {
+            .homefeature .box {
+                /* left:1%; */
+            }
+        }
+        @media screen and (max-width:1199px){
+            
+            .homefeature .box h2 {
+                line-height: 1;
+            }
+            .homefeature .box h2 .spaced {
+                font-size: 1rem;
+            }
+            .homefeature .box h2 .compressed.demi {
+                font-size: 2.5rem;
+            }
+            .homefeature .box h2 .italic {
+                font-size: 1.5rem;
+            }
+            .homefeature .box .skew-button {
+                font-size: 1.25rem;
+            }
+        }
+        @media (max-width: 1033px){
+            h1{font-size:1.777777rem;}
+        }
+        @media screen and (min-width:1400px){
+            .temp-feature {
+                background-image: url('images/graphics/2019/annual-report/AR-temp-banner-bg.png');
+                background-size: cover;
+                position: relative;
+                max-width: none;
+            }
+        }
